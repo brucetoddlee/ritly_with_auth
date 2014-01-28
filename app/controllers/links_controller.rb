@@ -1,5 +1,7 @@
 class LinksController < ApplicationController
 
+  before_filter :signed_in_user, only: [:create, :new, :delete]
+
   def index
   	@links = Link.all
   end
