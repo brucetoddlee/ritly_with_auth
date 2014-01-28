@@ -1,0 +1,13 @@
+<div>
+
+Enter URL to be shortened. Be sure to enter the starting 'http://' :
+</br>
+</br>
+
+<%= form_for @link do |f| %>
+    <%= f.text_field :input_link, placeholder: "enter URL" %> <br></br>
+    
+    <%= f.submit %>
+<% end %>
+
+</div>
